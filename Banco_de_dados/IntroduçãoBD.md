@@ -70,5 +70,45 @@ E os funcionários da empresa seriam armazenados assim:
 
 Os dados guardados em uma tabela são chamados de *entidades*. Como uma tabela é usualmente representada como uma matriz, os atributos do dados (primeiro nome, último nome, ...) são chamados de *colunas* e os registros (cada um dos empregados) são chamadas de *linhas*. Uma chave primária é normalmente sublinhada. Qualquer atributo único (por exemplo, endereço)  ou grupo de atributos (como primeiro nome e último nome) podem ser a chave primária de uma tabela, mas isso é recomendado para a técnica do *id*, como no exemplo *id_empregado* como chave primária. A função da chave primária é simplesmente diferenciar uma das linhas ou registros que fazem parte de uma tabela.
 
+Agora uma segunda tabela chamada *projeto* que guardará os projetos da empresa:
 
+| **EMPREGADO** |  |
+|----------|---------------|
+| ID empregado  | Um número inteiro  |
+| Primeiro nome  | Uma string de caracteres  |
+| Último nome | Uma string de caracteres  |
+| Telefone  | 10 números |
+| Endereço | Uma string de caracteres  | 
+<br>
 
+| **PROJETO** |  |
+|----------|---------------|
+| ID projeto  | Um inteiro  |
+| nome  | Uma string de caracteres  |
+| data-da-criação | uma data  |
+| data-termino  | uma data |
+| # gerente | um inteiro  | 
+<br>
+
+E os projetos da companhia seriam armazenados no banco da seguinte forma:
+
+| Empregado |  || | | |
+|----------|----------|----------|----------|----------|----------|
+| ID Empregado  | Primeiro nome   | Último nome   | Telefone   | Endereço   | 
+| 1   | Big   | Boss   | 9988881213   | big.boss@aleatorio.com  | 
+| 2  | Pedro   | Tavares  | 9188775656   | pedro.tavares@aleatorio.com   | 
+| 3 | Junior   | Bosi  | 5688333434   | junior.bosi@aleatorio.com | 
+| 4 | Pedro   | Silva   | 2123234545   | pedro.silva@aleatorio.com   | 
+| 5  | Henrique   | Santos   | 1198985454   | henrique.santos@aleatorio.com   | 
+<br>
+
+| Projetos |  || | | |
+|----------|----------|----------|----------|----------|----------|
+| ID project  |  nome   | data-criação   | data-término   | #gerente   | 
+| 1   |  Google  | 1998-09-08   | NULL   | 5  | 
+| 2  | Linux  | 1991-01-01 | NULL   | 3  | 
+| 3 | Wikipedia | 2001-01-01  | NULL   | 4| 
+| 4 | CRM  | 2015-09-14   | NULL   | 5  | 
+<br>
+
+**id_project** é a chave primária da tabela projeto e *#gerente* é a chave **estrangeira**. Uma chave estrageira é uma chave primária de uma tabela, fazendo referência ou ligação com algum valor de outra tabela. Fazendo isso, o projeto Google está conectado ao empregado Henrique Santos
