@@ -169,3 +169,35 @@ E agora como ficaria os empregados e os projetos:
 
 Um empregado pode estar ligado com vários projetos e um projeto pode ser associado a vários empregados, isso é impossível com APENAS uma chave estrangeira. Uma tabela de junção não tem chave primária própria. Sua chave primária é o par de chaves estrangeiras, esse relacionamento é ÚNICO. Uma tabela de junção pode ligar mais de duas tabelas contendo entidade por mais colunas.
 
+### Relacionamentos
+
+Tipos diferentes de relacionamentos:<br>
+    - Um para um;<br>
+    - Um para muitos (exemplo o gerente de um projeto);<br>
+    - Muitos para muitos (membros de um projeto).<br>
+
+### O que é SGBDR?
+Sistema de Gerenciamento de Banco de Dados Relacional. O **SGBDR** é uma base do SQL e de todos os sistemas de banco de dados modernos, como MS SQL Server, IBM DB2, Oracle, MySQL e Microsoft Acess.<br>
+Um sistema de gerenciamento de banco de dados relacional (SGBDR) é um sistema de gerenciamento de banco e dados (SGBD) que se baseia no modelo relacional introduzido por EF Codd.<br>
+
+### O que é uma Tabela?
+Os dados em um SGBDR são armazenados em objetos de banco de dados que são chamados de **tabekas**. Essa tabela é uma coleção de entradas de dados relacionadas e consiste em várias colunas e linhas.<br>
+Uma tabela é a forma mais comum e simples de armazenamento de dados em um banco de dados relacional. O programa a seguir é um exemplo de tabelas CLIENTES.<br>
+
+![Clientes](assets/clientes.png)
+
+### O que é um Campo em SGBDR?
+Cada tabela é dividida em entidades menores chamadas campos. Os campos da tabela **CLIENTES** tem : **ID, NOME, IDADE, ENDEREÇO, SALÁRIO.**<br>
+Um campo é uma coluna em uma tabela para manter informações específicas sobre cada registro na tabela.<br>
+
+### O que é um registro ou uma linha em SGBDR?
+Um registro/linha de dados erepresenta cada entrasa individual em uma tabela. Exemplo, há 7 registros na tabela **CLIENTES** acima. A seguir um exemplo de uma única linha de dados ou registro na tabela **CLIENTES**:
+
+![clientes2](image.png)
+Um registro é uma entidade horizontal em uma tabela.<br>
+
+### O que é uma coluna?
+Uma coluna é uma entidade vertical em uma tabela que contém todas as informações associadas a um campo específico em uma tabela. Exemplo, uma coluna na tabela clientes é endereço, que representa a descrição do local e seria mostrado abaixo: <br>
+![cliente3](assets/cliente3.png)
+
+### O que é um valor NULL?
