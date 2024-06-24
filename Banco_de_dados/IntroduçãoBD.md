@@ -201,3 +201,7 @@ Uma coluna é uma entidade vertical em uma tabela que contém todas as informaç
 ![cliente3](assets/cliente3.png)
 
 ### O que é um valor NULL?
+Um valor **NULL** em uma tabela é um valor em um campo que está em branco. Um campo com valor **NULL** é um campo sem valor.<br>
+É importante lembrar que um valor **NULL** é diferente de um valor zero ou em um campo que contém espaços. Um campo com valor **NULL** foi deixado em branco durante a criação de um registro.<br>
+
+### Restrições SQL
