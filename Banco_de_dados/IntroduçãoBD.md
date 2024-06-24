@@ -111,4 +111,61 @@ E os projetos da companhia seriam armazenados no banco da seguinte forma:
 | 4 | CRM  | 2015-09-14   | NULL   | 5  | 
 <br>
 
-**id_project** é a chave primária da tabela projeto e *#gerente* é a chave **estrangeira**. Uma chave estrageira é uma chave primária de uma tabela, fazendo referência ou ligação com algum valor de outra tabela. Fazendo isso, o projeto Google está conectado ao empregado Henrique Santos
+**id_project** é a chave primária da tabela projeto e *#gerente* é a chave **estrangeira**. Uma chave estrageira é uma chave primária de uma tabela, fazendo referência ou ligação com algum valor de outra tabela. Fazendo isso, o projeto Google está conectado ao empregado Henrique Santos. Essa conexão se chama **relacionamento**. Uma chave estrangeira é usada por "#". Veja qu vários projetos podem ter o MESMO gerente. Nesse caso, Henrique Santos é gerente do projeto 1 e 5, logo um mesmo empregado por ser gerente de VÁRIOS projetos.<br>
+Vamos criar várias ligações. Faremos uma tabela de **junção**. Uma tabela de junção é uma tabela que não é usada para guardar dados e sim LIGAÇÕES entre as entidades de outras tabelas. É a tabela onde as ligações ou relacionamentos entre as tabelas são guardadas. Vamos fazer uma tabela chamada **membros** que liga empregados com projeto:
+
+| empregado |                    |
+|---------------|-------------------------|
+| id_empregado  | um inteiro              |
+| primeiro-nome | uma string de caracteres|
+| último-nome   | uma string de caracteres|
+| telefone      | 10 números              |
+| endereço      | uma string de caracteres|
+
+|membros||
+|-------|------|
+|# id_empregado|um inteiro|
+|# id_projeto | um inteiro|
+
+| projeto |                   |
+|--------------|-------------------------|
+| id_projeto   | um inteiro              |
+| nome         | uma string de caracteres|
+| data-criação | uma data                |
+| data-término | uma data                |
+| gerente      | um inteiro              |
+
+E agora como ficaria os empregados e os projetos:
+
+| id_employee | primeiro-nome | último-nome    | telefone | endereço                        |
+|-------------|---------------|----------------|----------|---------------------------------|
+| 1           | Big           | BOSS           | 936854270| big.boss@company.com            |
+| 2           | Augusto       | XAVIER         | 936854271| augusto.xavier@company.com      |
+| 3           | Linus         | TORVALDS       | 936854272| linus.torvalds@company.com      |
+| 4           | Jimmy         | WALES          | 936854273| jimmy.wales@company.com         |
+| 5           | Larry         | PAGE           | 936854274| larry.page@company.com          |
+| 6           | Max           | THE GOOGLER    | 936854275| max.the-googler@company.com     |
+| 7           | Jenny         | THE WIKIPEDIAN | 936854276| jenny.the-wikipedian@company.com|
+
+|projeto|||||
+|------------|------------|--------------|--------------|---------|
+| id_project | nome       | data-criação | data-término | gerente |
+| 1          | Google     | 1998-09-08   | NULL         | 5       |
+| 2          | Linux      | 1991-01-01   | NULL         | 3       |
+| 3          | Wikipedia  | 2001-01-01   | NULL         | 4       |
+| 4          | CRM        | 2015-09-14   | NULL         | 5       |
+
+|membros||
+|--------------|------------|
+| id_empregado | id_projeto |
+| 3            | 2          |
+| 2            | 1          |
+| 4            | 3          |
+| 5            | 1          |
+| 2            | 3          |
+| 6            | 1          |
+| 7            | 3          |
+| 5            | 4          |
+
+Um empregado pode estar ligado com vários projetos e um projeto pode ser associado a vários empregados, isso é impossível com APENAS uma chave estrangeira. Uma tabela de junção não tem chave primária própria. Sua chave primária é o par de chaves estrangeiras, esse relacionamento é ÚNICO. Uma tabela de junção pode ligar mais de duas tabelas contendo entidade por mais colunas.
+
