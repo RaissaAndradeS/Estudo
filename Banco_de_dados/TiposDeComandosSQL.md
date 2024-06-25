@@ -19,3 +19,24 @@ Os comandos SQL padrão para interagir com banco de dados relacionais são: CREA
 |UPDATE|Modifica registro|
 |DELETE|Exclui registro|
 
+### Linguagem de consulta de dados 
+É usada para fazer consultas, extrair informações de um banco de dados. É importante que essas consultas aconteçam sem provocar mudanças no banco de dados. O comando é SELECT. <br>
+
+### O que é uma query em SQL?
+Consulta é feita para extrair respostas do dados.<br>
+
+```
+select * from alunos
+select * from professores
+select * from matriculas_de_alunos
+select * from horarios_de_aula
+```
+### Como descobrir informações sobre o banco de dados?
+
+Aprendendo informações sobre uma tabela:
+
+- Listar colunas nessa tabela
+- Listar índices nessa tabela
+- Listar chaves estrangeiras nessa tabela
+- Listar chaves estrageiras em outras tabelas apontando pra essa tabela
+- Gerando um dicionário e usando o excel
