@@ -205,3 +205,13 @@ Um valor **NULL** em uma tabela é um valor em um campo que está em branco. Um 
 É importante lembrar que um valor **NULL** é diferente de um valor zero ou em um campo que contém espaços. Um campo com valor **NULL** foi deixado em branco durante a criação de um registro.<br>
 
 ### Restrições SQL
+Restrições são regras impostas em coluna de dados em uma tabela. Elas são usadas para limitar o tipo de dados que podem entrar em uma tabela. Isso garante uma precisão e confiabilidade dos dados no banco de dados.<br>
+Como restrições podem ser em nível de coluna ou nível de tabela. Em nível de coluna são aplicadas apenas uma coluna, já no nível tabela são aplicadas a toda tabela.<br>
+
+- __NOT NULL:__ Garante que uma coluna não pode ter um valor **NULL**.
+- __DEFAULT:__ Fornece um valor padrão para uma coluna como nenhum é especificado.
+- __UNIQUE:__ Garante que todos os valores em uma coluna diferentes.
+- __PRIMARY KEY:__ Identificação cada linha/registro em uma tabela de banco de dados.
+- __FOREIGN KEY:__ Identificação exclusivamente uma linha/registro em qualquer outra tabela do banco de dados.
+- __CHECK:__ A restrição CHECK garante que todos os valores em uma coluna satisfaçam determinadas condições.
+- __INDEX:__ Usado para criar e recuperar dados do banco de dados muito rapidamente.
