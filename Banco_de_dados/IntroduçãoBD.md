@@ -214,4 +214,12 @@ Como restrições podem ser em nível de coluna ou nível de tabela. Em nível d
 - __PRIMARY KEY:__ Identificação cada linha/registro em uma tabela de banco de dados.
 - __FOREIGN KEY:__ Identificação exclusivamente uma linha/registro em qualquer outra tabela do banco de dados.
 - __CHECK:__ A restrição CHECK garante que todos os valores em uma coluna satisfaçam determinadas condições.
-- __INDEX:__ Usado para criar e recuperar dados do banco de dados muito rapidamente.
+- __INDEX:__ Usado para criar e recuperar dados do banco de dados muito rapidamente.<br>
+
+### Integridade de dados
+
+- __Integridade da entidade:__ Não há linhas duplicadas em uma tabela.
+- __Integridade do domínio:__ Impõem entradas válidas para uma determinada coluna restringindo o tipo, o formato ou o intervalo de valores.
+- __Integridade referencial:__ Como linhas não podem ser excluídas, pois ão usadas por outros registros.
+- __Integridade definida pelo usuário:__ Impõem algumas regras de negócios específicas que não se enquadram na integridade de entidade, domínio ou referencial.
+
