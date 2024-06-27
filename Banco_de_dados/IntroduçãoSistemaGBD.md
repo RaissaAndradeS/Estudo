@@ -78,6 +78,17 @@ O SGBD coordena o acesso por usuários e processos concorrentes:
 
 - Métodos baseados em bloqueio como bloqueio de duas fases para evitar leituras incorretas.
 - Métodos otimistas como controle de concorrência de várias versões detectando conflitos no momento do commit.
--
--
--
+- Métodos de ordenação de carimbo de data/hora para sequenciar operações com base na ordem do carimbo de data/hora.
+- Algoritmos de prevenção e detecção de deadlock para lidar com bloqueios.
+- Essa sincronização impede a corrupção de dados e inconsistências.
+
+### Abstração de Dados 
+O SGBD fornece interfazes abstratas para isolar aplicativos dos detalhes de armazenamento físico:
+
+- Visões para fornecer representação lógica personalizada de dados de uma ou mais tabelas.
+- Linguagem de acesso a dados SQL para manipular dados sem conhecer as localizações físicas.
+- Procedimentos armazenados que encapsulam lógica de acesso a dados como rotinas.
+- APIs como ODBC, JDBC e ADO.NET para conectar aplicativos a bancos de dados.
+- Essa independência de dados permite alterar o armazenamento subjacente sem afetar os aplicativos.
+
+### Relatórios e Análises 
