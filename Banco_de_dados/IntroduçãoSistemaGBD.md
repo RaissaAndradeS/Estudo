@@ -17,7 +17,10 @@ O SGBD gerencia como os dados são fisicamente armazenados e recuperados do arma
 ### Segurança de Dados 
 O SGBD tem recursos de segurança para evitar acesso não autorizado e proteger a confidencialidade dos dados.
 
-- 
-- 
-- 
-- 
+- Gerenciamento de contas de usuário com credenciais como nome de usuário/senha para autenticação.
+- Conceder e revogar privilégios de acesso a usuários e funções.
+- Aplicar controle de acesso a objetos do banco de dados como tabelas, procedimentos, visualizações, etc.
+- Auditar atividades do usuário para vigilância de segurança.
+- Criptografar dados sensíveis no banco de dados ou tráfego de rede com algoritmos de criptografia.
+- Mascarar dados para proteção de privacidade por meio da obfuscação de campos sensíveis.
+
