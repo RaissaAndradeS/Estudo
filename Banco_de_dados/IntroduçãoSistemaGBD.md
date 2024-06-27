@@ -13,3 +13,11 @@ O SGBD gerencia como os dados são fisicamente armazenados e recuperados do arma
 - Criar e manter arquivos de dados e atribuir identificadores exclusivos a cada página ou bloco de dados. 
 - Interagir com o sistema operacional e gerenciar os buffers para leitura de blocos de dados do disco e gravação no disco.
 - Manter mapeamentos entre objetos lógicos como tabelas e locais físicos de armazenamento de dados.
+
+### Segurança de Dados 
+O SGBD tem recursos de segurança para evitar acesso não autorizado e proteger a confidencialidade dos dados.
+
+- 
+- 
+- 
+- 
