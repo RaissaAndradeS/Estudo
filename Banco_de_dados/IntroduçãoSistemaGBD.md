@@ -56,4 +56,28 @@ O SGBD valida os dados para garantir que atendam às restrições de integridade
 ## Suporte a Transações 
 O SGBD agrupa operações em transações que são executadas de forma confiável como uma unidade única:
 
-- Inicia uma transação, termina com commit/rollback com base no sucesso
+- Inicia uma transação, termina com commit/rollback com base no sucesso.
+- Mantém isolamento para que as alterações não sejam visíveis até o commit.
+- Recupera transações falhadas para o estado consistente anterior.
+- Bloqueia os dados acessados para evitar operações conflitantes.
+- Registra etapas da transações para recuperação de falhas e auditoria.
+- Isso garante que as alterações de uma transação seja aplicada ou descartada de forma confiável.
+
+### Recuperação de Falhas 
+O SGBD recupera o banco de dados de forma confiável após falhas ou crashes inesperados:
+
+- Usa log de transações antecipadas para refazer alterações confirmadas.
+- Desfaz alterações não confirmadas rolando para trás usando log.
+- Restaura arquivos de dados corrompidos ou danificados a partir de backups conforme necessário.
+- Libera bloqueos e limpa após transações falhadas.
+- Reinicia transações que estavam ativas durante uma falha após a recuperação.
+- Isso restaura o banco de dados para o último estado confirmado, garantido durabilidade.
+
+### Controle de Concorrência
+O SGBD coordena o acesso por usuários e processos concorrentes:
+
+- Métodos baseados em bloqueio como bloqueio de duas fases para evitar leituras incorretas.
+- Métodos otimistas como controle de concorrência de várias versões detectando conflitos no momento do commit.
+-
+-
+-
