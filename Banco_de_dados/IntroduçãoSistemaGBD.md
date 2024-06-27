@@ -24,3 +24,12 @@ O SGBD tem recursos de segurança para evitar acesso não autorizado e proteger 
 - Criptografar dados sensíveis no banco de dados ou tráfego de rede com algoritmos de criptografia.
 - Mascarar dados para proteção de privacidade por meio da obfuscação de campos sensíveis.
 
+### Controle de Acesso Multiusuário 
+O SGBD coordena o acesso de vários usuários e processos concorrentes para garantir a integridade dos dados. Os mecanismos usados são: 
+
+- Controle de concorrência para evitar atualizações perdidas por meio de bloqueio, ordenação de carimbo de data/hora, etc.
+- Níveis de isolamento para isolar transações de leituras incorretas ou outras operações conflitantes.
+- Atomicidade para possibilitar a execução de transações tudo ou nada.
+- Durabilidade para persistir todas as alterações confirmadas mesmo após falhas.
+- Consistência para manter a correção dos dados entre transações.
+- Isso garante as propriedades ACID que orientam transações de banco de dados confiáveis.
