@@ -33,3 +33,27 @@ O SGBD coordena o acesso de vários usuários e processos concorrentes para gara
 - Durabilidade para persistir todas as alterações confirmadas mesmo após falhas.
 - Consistência para manter a correção dos dados entre transações.
 - Isso garante as propriedades ACID que orientam transações de banco de dados confiáveis.
+
+### Backup e Recuperação 
+O SGDB fornece utilitários para fazer backup de dados e matadados regularmente e restaurá-los quando necessário. Isso inclui:
+
+- Backup online ou offline dos arquivos do banco de dados, logs de transações e configurações.
+- Recuperção até um ponto no tempo para restaurar o banco de dados a um estado consistente anterior.
+- Recuperação baseada em log usando logs de transações para desfazer transações não confirmadas após uma falha.
+- Arquivamento de dados antigos e backups para retenção de longo prazo e fins de descobreta eletrônica.
+- Capacidades de espelhamento e replicação para manter cópias redundantes de dados em locais remotos.
+
+### Integridade de Dados 
+O SGBD valida os dados para garantir que atendam às restrições de integridade definidas:
+
+- Integridade da entidade via chaves primárias que identificam exclusivamente linhas.
+- Integridade referencial entre tabelas relacionadas com base em chaves estrangeiras.
+- Integridade de domínio para validar formatos de dados, intervalos e valores aceitáveis.
+- Restrições personalizadas usando condições de verificação para linhas.
+- Restrições complexas que abrangem várias tabelas, como restrições de junção exponencial.
+- Isso impede que dados incorretos sejam armazenados no banco de dados.
+
+## Suporte a Transações 
+O SGBD agrupa operações em transações que são executadas de forma confiável como uma unidade única:
+
+- Inicia uma transação, termina com commit/rollback com base no sucesso
