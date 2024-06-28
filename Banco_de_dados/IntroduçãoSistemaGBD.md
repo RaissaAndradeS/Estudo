@@ -110,4 +110,6 @@ O SGBD oferece interfazes padrão para que aplicativos acessem, armazenem e gere
 - Serviços da web como APIs REST para interoperabilidade.
 - Isso permite o desenvolvimento de aplicativos baseados em banco de dados em várias linguagens de programação.
 
+### Conclusão 
+O SGBD tem um papel fundamental na organização, segurança e eficiência dos dados em uma variedade de aplicações e ambientes. Depois de ressaltar a importância de todos esses pontos acima, o SGBD é uma peça fundamental da infraestrutura de dados em qualquer organização moderna, fornecendo os meios necessários para gerenciar grandes volumes de dados de forma eficiente, segura e confiável. Quando utilizar as funcionalidades avançadas oferecidas por um SGBD, as organizações podem ter insights valiosos a partir de seus dados, impulsionando a inovação e o sucesso nos negócios.
 
