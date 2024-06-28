@@ -92,3 +92,12 @@ O SGBD fornece interfazes abstratas para isolar aplicativos dos detalhes de arma
 - Essa independência de dados permite alterar o armazenamento subjacente sem afetar os aplicativos.
 
 ### Relatórios e Análises 
+O SGBD inclui ferramentas para gerar insights por meio de relatórios, painéis e análises:
+
+- Geradores de relatórios para consultar dados e gerar relatórios formatados.
+- Processamento Analítico Online (OLAP) para análise multidimensional complexa.
+- Algoritmos de mineração de dados para descobrir padrões e relacionamentos.
+- Ferramentas de visualização para criar gráficos, relatórios e painéis a partir de dados.
+- Interface de consulta SQL e programação para tarefas analíticas.
+
+
