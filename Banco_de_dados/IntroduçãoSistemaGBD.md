@@ -100,4 +100,14 @@ O SGBD inclui ferramentas para gerar insights por meio de relatórios, painéis 
 - Ferramentas de visualização para criar gráficos, relatórios e painéis a partir de dados.
 - Interface de consulta SQL e programação para tarefas analíticas.
 
+### Interfazes de Programação 
+O SGBD oferece interfazes padrão para que aplicativos acessem, armazenem e gerenciem dados:
+
+- SQL para recuperar, inserir, excluir e modificar dados.
+- Procedimentos e funções armazenadas para encapsular lógica de negócios.
+- APIs como ODBC, JDBC e ADO.NET.
+- Conectores nativos para linguagens como Python, Java, PHP, etc.
+- Serviços da web como APIs REST para interoperabilidade.
+- Isso permite o desenvolvimento de aplicativos baseados em banco de dados em várias linguagens de programação.
+
 
