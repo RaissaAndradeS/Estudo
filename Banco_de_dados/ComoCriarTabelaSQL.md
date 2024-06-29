@@ -29,3 +29,16 @@ PRIMARY KEY (campo_x,...)
 
 );
 ```
+Se quiser que um camo seja de auto-incremento, deve colocar AUTO_INCREMENT na frente do campo determinado:
+
+```
+CREATE TABLE nome_tabela
+(
+nome_campo_1 tipo_1 NOT NULL AUTO_INCREMENT,
+nome_campo_2 tipo_2,
+...
+nome_campo_n tipo_n,
+PRIMARY KEY (campo_x,...)
+
+);
+```
