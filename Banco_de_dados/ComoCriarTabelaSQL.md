@@ -73,4 +73,7 @@ Telefone CHAR (8),
 PRIMARY KEY (Codigo) 
 );
 ```
+Nesse comando, criamos uma tabela chamada Cliente, essa tabela contém 4 campos, o primeiro campo é o Código do cliente, esse campo vai ser utilizado como chave primária de forma que não poderá se repetir nunca.
+E ele deve ser sempre preenchido (NOT NULL), é numérico do tipo inteiro (INT) e deve auto-incrementar de acordo com o número de clientes que for incluido.<br>
+O campo Nome é do tipo VARCHAR(60), ou seja, aceita dados alfa-numéricos com até 60 caracteres. No entanto se um nome for inserido com menos de 60 caracteres, o número de bytes consumidos pelo campo será de acordo com o nome inserido. <br>
 
