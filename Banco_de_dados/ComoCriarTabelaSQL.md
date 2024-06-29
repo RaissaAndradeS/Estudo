@@ -42,3 +42,35 @@ PRIMARY KEY (campo_x,...)
 
 );
 ```
+
+## Tipos de Dados 
+Tipos de dados definem os tipos de informações que podem ser inseridas em um campo. Somente dados do mesmo tipo do campo poderão ser inseridos. Os tipos suportados por um banco de dados podem variar de SGBD para SGBD. Abaixo estão os principais tipos encontrados: 
+
+| Tipo         | Explicação                                                             | Valores permitidos                             | Exemplo       |
+|--------------|------------------------------------------------------------------------|------------------------------------------------|---------------|
+| BOOLEAN      | Armazena um bit de informação, utilizado para verdadeiro ou falso.     | Verdadeiro/falso                               | true/false    |
+| VARCHAR(n)   | Uma string com tamanho máximo n                                        | [0-9a-zA-Z]+{n}                                | "foo"         |
+| CHAR(n)      | Uma string com tamanho fixo n                                          | [0-9a-zA-Z]{n}                                 | "foo"         |
+| SMALLINT     | Número inteiro com 16 bits de precisão                                 | \-?[0-9]+                                      | 584           |
+| INTEGER      | Número inteiro com 32 bits de precisão                                 | \-?[0-9]+                                      | -8748         |
+| FLOAT        | Número decimal                                                         | \-?[0-9]+[\.[0-9]+]?                           | 48.96         |
+| NUMBER(n,[d])| Um número com n dígitos (e d dígitos decimais se mencionado)           | \-?[0-9]+[\.[0-9]+]?                           | 484.65        |
+| DATE         | Uma data (Padrão americano)                                            | [0-9][0-9][0-9][0-9]\-[0-1][0-9]\-[0-3][0-9]   | 2009-03-24    |
+| TIME         | Um período de sessenta minutos; 1/24 de um dia                         | [0-2][0-9]\:[0-5][0-9]\:[0-5][0-9]             | 11:24:56      |
+| TIMESTAMP    | Data e hora                                                            | [0-9]+                                         | 18648689595962|
+| BLOB         | Qualquer dado                                                          | Qualquer                                       |               |
+
+## Exemplo 
+Como exemplo do uso do comando CREATE TABLE, um exemplo é a necessidade de uma tabela que deva ter dados dos clientes de uma loja.
+
+```
+CREATE TABLE Cliente
+(
+Codigo INT NOT NULL AUTO_INCREMENT,
+Nome VARCHAR (60) NOT NULL,
+Data_Nascimento DATE,
+Telefone CHAR (8),
+PRIMARY KEY (Codigo) 
+);
+```
+
