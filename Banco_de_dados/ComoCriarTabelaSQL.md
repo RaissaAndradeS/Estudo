@@ -43,7 +43,7 @@ PRIMARY KEY (campo_x,...)
 );
 ```
 
-## Tipos de Dados 
+### Tipos de Dados 
 Tipos de dados definem os tipos de informações que podem ser inseridas em um campo. Somente dados do mesmo tipo do campo poderão ser inseridos. Os tipos suportados por um banco de dados podem variar de SGBD para SGBD. Abaixo estão os principais tipos encontrados: 
 
 | Tipo         | Explicação                                                             | Valores permitidos                             | Exemplo       |
@@ -60,7 +60,7 @@ Tipos de dados definem os tipos de informações que podem ser inseridas em um c
 | TIMESTAMP    | Data e hora                                                            | [0-9]+                                         | 18648689595962|
 | BLOB         | Qualquer dado                                                          | Qualquer                                       |               |
 
-## Exemplo 
+### Exemplo 
 Como exemplo do uso do comando CREATE TABLE, um exemplo é a necessidade de uma tabela que deva ter dados dos clientes de uma loja.
 
 ```
@@ -79,3 +79,10 @@ O campo Nome é do tipo VARCHAR(60), ou seja, aceita dados alfa-numéricos com a
 O campo Data_Nascimento é do tipo DATE, ou seja, uma data, que nesse caso não é obrigado preencher.<br>
 O campo Telefone foi determinado como sendo alfa-numérico com oito caracteres definidos, e caso sejam utilizados menos caracteres, o número de bytes consumidos serão sempre os mesmos independente dos dados. Isso é útil para dados alfanuméricos que não variam de tamanho, como o caso de UF no Brasil, cuja abreviação sempre são de dois caracteres.<br>
 A instrução PRIMARY KEY define qual dos campos será a chave primária e não pode ser repetido, sendo o diferenciador entre os diversos clientes que sejam inseridos nesta tabela.<br>
+
+### Descrição 
+Tabelas podem ser manipuladas de várias formas, inserindo, alterando ou excluindo dados. Podemos visualizar a estrutura e campos de uma tabela criada utilizando o comando DESCRIBE ou DESC;
+
+```DESCRIBE Nome_Tabela;```
+
+```DESC Nome_Tabela;```
