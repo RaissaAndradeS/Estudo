@@ -86,3 +86,6 @@ Tabelas podem ser manipuladas de várias formas, inserindo, alterando ou excluin
 ```DESCRIBE Nome_Tabela;```
 
 ```DESC Nome_Tabela;```
+
+### Regra de Integridade
+Ao criar uma tabela dentro de um banco de dados devemos ter em mente as regras de integridade, que garantem a consistência, integridade e não redundância dos dados. Entre essas regras podemos englobar as chaves primárias, checagem e chave estrangeira.<br>
