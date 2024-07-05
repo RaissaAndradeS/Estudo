@@ -91,6 +91,14 @@ Tabelas podem ser manipuladas de várias formas, inserindo, alterando ou excluin
 Ao criar uma tabela dentro de um banco de dados devemos ter em mente as regras de integridade, que garantem a consistência, integridade e não redundância dos dados. Entre essas regras podemos englobar as chaves primárias, checagem e chave estrangeira.<br>
 
 ### Chave primária 
+
 ``PRIMARY KEY (campo_x, ...);``
 
 ``Codigo INT NOT NULL PRIMARY KEY AUTO_INCREMENT;``
+
+Nessa declaração os campos inseridos entre parênteses formam a chave primária da tabela. A chave primária funciona como os campos que diferenciam os dados uns dos outros, e que não podem ser repetidos de maneira alguma. Exemplo, em nossa tabela Cliente, o código do Cliente funciona como chave-primária, ou seja, os clientes podem ate ter o mesmo nome, endereço ou telefone mas os códigos serão diferentes um dos outros. Caso dois códigos sejam inseridos iguais no SGBD, ele retornará um erro.
+
+> ATENÇÃO: AUTO_INCREMENT é utilizada no Mysql, para outro SGBD irão utilizar outra forma, sql server é IDENTITY.
+
+### Checagem 
+
