@@ -124,3 +124,10 @@ A chave estangeira é uma clausula que deve ser incluída quando possuímos mais
 
 ``FOREING KEY (Campo1, Campo2, Campo3, ..) REFENCES Nome_Tabela2 (Nome_Chave);``
 
+### Como remover tabela em SQL?
+Para excluir é só usar a sintaze básica:
+
+``DROP TABLE nome_tabela;``
+
+No entanto, bastante atenção ao excluir uma tabela que possui relacionamento com outras tabelas, o SGBD retornará erro. Nesse caso, se realmento for necessário excluir uma tabela, devemos fazer as alterações necessárias em todas as tabelas relacionadas.
+
