@@ -101,4 +101,26 @@ Nessa declaração os campos inseridos entre parênteses formam a chave primári
 > ATENÇÃO: AUTO_INCREMENT é utilizada no Mysql, para outro SGBD irão utilizar outra forma, sql server é IDENTITY.
 
 ### Checagem 
+Podemos inserir em uma tabela depois do campo chave primária e antes do último parêntese a clausula:
+
+``CHECK Nome _Campo IN (valor1, valor2, valor n); --para o SQL Server`` <br>
+
+ou
+
+``enum (valor1, valor2, valor n); -- para o Mysql``
+
+Essas clausulas forçam a um campo a aceitar apenas valores especificados entre os parênteses. Isso pode ser útil oara definir campos como sexo, por exemplo. Dessa forma, forçamos as opções através de: 
+
+``CHECK Sexo IN ('M', 'F'); --SQL Server`` <br>
+
+ou 
+
+``sexo enum ('M', 'F'); --Mysql``
+
+Onde os campos Sexo só podem ter M (Masculino) ou F (Feminino).
+
+### Chave estangeira 
+A chave estangeira é uma clausula que deve ser incluída quando possuímos mais de duas tabelas em um banco de dados. Através da chave estrangeira estabelecemos as relações entre duas ou mais tabelas. A chave estrangeira dessa forme refenrencia o campo que é chave primária de outra tabela.
+
+``FOREING KEY (Campo1, Campo2, Campo3, ..) REFENCES Nome_Tabela2 (Nome_Chave);``
 
