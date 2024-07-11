@@ -19,4 +19,54 @@ A operação ``Update`` ou ``Modify`` é usada para mudar os valores de um ou ma
 Modificar um valor de chave primária é similar a remover uma tupla e inserir outra em seu lugar, porque usamos para identificá-las. Se um atributo de chave estrangeira for modificado, o SGBD deverá se certificar de que o novo valor refere-se a uma tupla existente na relação que foi referida ou é **NULL**. Quando uma restrição de integridade referencial é especificada na DDL, o SGBD permitirá ao usuário escolher as opções distintas para tratar uma violação causada por Delete e uma causada por Update.
 
 ## ADD 
-O ``ADD`` é usado para adicionar um novo campo em uma tabela, onde devemos definir seu tipo da mesma forma como fazemos ao criar um campo em uma nova tabela.
+O ``ADD`` é usado para adicionar um novo campo em uma tabela, onde devemos definir seu tipo da mesma forma como fazemos ao criar um campo em uma nova tabela. Exemplo : <br>
+
+- Inserir mais um campo chamado Telefone Comercial no final da tabela Cliente.
+
+```
+ALTER TABLE Cliente
+ADD Tel_Comercial INT;
+```
+Campos com tamanhos definidos, devem ter seu tamanho especificado. Caso vá insterir mais um campo VarChar, chamado por exemplo de Nome da Mãe em nossa tabela Ciente fazemos:
+
+```
+ALTER TABLE Cliente
+ADD Nome_Mae VARCHAR(60);
+```
+Campo que seja inserido antes ou depois de um determinado campo de nossa tabela, é usada essa sintaxe:
+
+```
+ALTER TABLE Nome_Tabela
+ADD Nome_Campo Nova_Regra [FIRST|AFTER] Campo_Determinado;
+```
+Se tiver ``FIRST``, o novo campo será criado antes do campo escolhido da tabela. Se for ``AFTER`` no campo Nome_Mae o campo do Nome do Cliente: 
+
+```
+ALTER TABLE Cliente
+ADD Nome_Mae VARCHAR(60)AFTER Nome;
+```
+Alguns gerenciadores usam ``ADD COLUMN`` ao invés de somente ``ADD``. Podemos utilizar ``ADD`` para adicionar por exemplo uma chave primária em uma tabela. Caso queira uma chave primária também: 
+
+```
+ALTER TABLE Cliente
+ADD PRIMARY KEY(Nome);
+```
+Se for para eliminar uma coluna da nossa tabela: 
+
+```
+ALTER TABLE Nome_Tabela
+DROP nome_campo;
+```
+Novamente, alguns gerenciadores também usam ``DROP COLUMN`` ao invés de somente ``DROP``. <br>
+Se for para alterar/mudar o nome da tabela que vai trabalhar, usamos: 
+
+```
+ALTER TABLE Cliente
+rename to novoNomeDaTabela;
+```
+Para mudar/alterar nome de uma das colunas já existentes na tabela, usa: 
+
+```
+ALTER TABLE Cliente 
+change colunm antigoNomeDaColuna novoNomeDaColuna tipoDeDadoDessaColuna e AsContrains;
+```
