@@ -70,3 +70,16 @@ Para mudar/alterar nome de uma das colunas já existentes na tabela, usa:
 ALTER TABLE Cliente 
 change colunm antigoNomeDaColuna novoNomeDaColuna tipoDeDadoDessaColuna e AsContrains;
 ```
+
+## MODIFY
+É usado para modificar as propriedade de um campo em uma tabela. Por exemplo, devemos modificar o tamanho de nosso campo Nome na tabela Cliente, de 60 para 100.
+
+```
+ALTER TABLE Cliente 
+MODIFY Nome(100);
+```
+Alteração no tipo de um campo, exemplo tipo do campo Nome de VarChar para Char.
+```
+ALTER TABLE Cliente
+MODIFY Nome CHAR (100);
+```
