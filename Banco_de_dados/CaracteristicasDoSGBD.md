@@ -26,4 +26,13 @@ O SGDB têm várias caraterísticas que o tornam uma ferramenta útil para geren
 ### Escabilidade 
 - O SGBD pode lidade com grandes volumes de dados e suportar um número crescente de usuários e transações.
 
-###
+### Validação de Dados 
+- O SGBD verifica os dados inseridos pelo usuário e garante que sejam válidos conforme as restrições e regras definidas.
+
+### Abstração de Dados 
+- O SGBD fornece um nível de abstração entre o usuário e o armazenamento físico dos dados, facilitando o gerenciamento e a manipulação dos dados.
+
+### Representação de Dados 
+- O SGBD armazena os dados de maneira lógica e organizada, facilitando o acesso, recuperação e manipulação dos dados.
+
+Essas características tornam o SGBD uma ferramenta poderosa para gerenciar e armazenar dados, e o tornam um componente necessário para muitas aplicações e sistemas modernos.
