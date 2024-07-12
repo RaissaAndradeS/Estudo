@@ -26,3 +26,11 @@ Esse interpreta e executa consultas para SGBD.
 - Análise de consultas - Converte instruções SQL ou de outra linguagem de consulta em código interpretável.
 - Otimização de consultas - Seleciona o plano de consultas mais eficiente com base em diferentes algoritmos.
 - Execução de consultas - Recupera registros do banco de dados usando caminhos de acesso conforme o plano de consulta. Exemplo, o MySQL usa um módulo de otimização de consultas que gera e armazena em cache planos de consulta.
+
+## Gerenciador de Transações
+Esse é responsável por gerenciar transações no sistema de banco de dados.
+
+- Iniciação, confirmação e reversão de transações.
+- Manutenção do isolamento entre transações via controle de concorrência.
+- Detecção e resolução de deadlock entre transações conflitantes.
+- Recuperação de falhas de transações. Exemplo, MySQL depende de mecanismo de armazenamento como o InnoBD para lidar com o gerenciamento de transações.
