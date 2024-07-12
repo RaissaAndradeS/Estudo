@@ -14,4 +14,22 @@ Um SGBD pode ser utilizado em ampla variedade de aplicações e setores industri
 ### Educação
 - São usados para armazenar e gerenciar informações dos alunos, registros de notas e outros dados educacionais.
 
-## Comércio Eletrônico
+### Comércio Eletrônico
+- São usados para armazenar e gerenciar dados para aplicação de comércio eletrônico, como catálogos de produtos, informações de clientes e histórico de pedidos.
+
+### Governo
+- São usados para armazenar e gerenciar dados para várias aplicações governamentais, como registros fiscais, registro de eleitores e segurança pública.
+
+### Manufatura
+- São usados para armazenar e gerenciar dados para processos de manufatura e produção como controle de inventário, programação e controle de qualidade.
+
+### Varejo 
+- São usados para armazenar e gerenciar dados para operação de varejo, como inventário, vendas e dados de clientes.
+
+### Transporte 
+- São usados para armazenar e gerenciar dados para operações de transporte, como gerenciamento de frota, programação e logística.
+
+### Mídias Sociais 
+- São usados para armazenar e gerenciar dados para aplicações de mídias sociais, como informações de usuários, posts e interações.
+
+Algumas de várias aplicações em que os SGBDs desempenham em papel fundamental, demonstando sua versatilidade e importância em uma variedade de setores e contextos industriais.
