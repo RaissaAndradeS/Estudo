@@ -164,4 +164,3 @@ Identifica as entidades e atributos para construção de um banco de dados para 
 ### Entidades -> Livro
 ### Atributos -> Título - Autor - Categorias - Editora - Preço - Data de publicação
     
-        
