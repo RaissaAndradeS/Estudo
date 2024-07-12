@@ -16,3 +16,18 @@ O SGBD oferece várias vantagens sobre sistemas baseados em arquivos tradicionai
 
 ### Recuperação de Dados 
 - Os SGBDs fornecem mecanismos para recuperar o banco de dados de falhar ou outros problemas e para criar backups dos dados para recuperação em caso de desastres, isso melhora a confiavilidade dos dados.
+
+### Compartilhamento de Dados 
+- Os SGBDs permitem que várias aplicações acessem os mesmos dados, o que pode melhorar a consistência dos dados e reduzir redundância de dados.
+
+### Alta Performance 
+- Os SGBDs utilizam diversas técnicas para melhorar o desempenho da recuperação de dados, como indexação, armazenamento em cache e particionamento.
+
+### Escabilidade 
+- Os SGBDs podem lidar com grandes volumes de dados e suportar um número crescente de usuários e transações.
+
+### Validação de Dados 
+- O SGBD verifica os dados inseridos pelo usuário e garante que sejam válidos conforme as restrições e regras definidas.
+
+### Abstração de Dados 
+- O SGBD fornece um nível de abstração entre usuário e o armazenamento físico dos dados, o que facilita o gerenciamento e a manipulação dos dados.
