@@ -222,4 +222,3 @@ Como restrições podem ser em nível de coluna ou nível de tabela. Em nível d
 - __Integridade do domínio:__ Impõem entradas válidas para uma determinada coluna restringindo o tipo, o formato ou o intervalo de valores.
 - __Integridade referencial:__ Como linhas não podem ser excluídas, pois ão usadas por outros registros.
 - __Integridade definida pelo usuário:__ Impõem algumas regras de negócios específicas que não se enquadram na integridade de entidade, domínio ou referencial.
-
