@@ -18,3 +18,12 @@ O SGDB têm várias caraterísticas que o tornam uma ferramenta útil para geren
 - O SGBD fornece mecanismos para recuperar o banco de dados de falhas ou outros problemas e para criar backups dos dados para recuperação em caso de desastres.
 
 ### Compartilhamento de Dados
+- O SGBD permite que várias aplicações acessem os mesmos dados e isso pode melhorar a consistência dos dados e reduzir a redundância de dados.
+
+### Alta Performance 
+- O SGBD utiliza diversas técnicas para melhorar o desempenho da recuperação de dados, como indexação, armazenamento em cache e particionamento.
+
+### Escabilidade 
+- O SGBD pode lidade com grandes volumes de dados e suportar um número crescente de usuários e transações.
+
+###
