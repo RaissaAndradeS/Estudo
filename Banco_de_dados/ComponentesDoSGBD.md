@@ -34,3 +34,27 @@ Esse é responsável por gerenciar transações no sistema de banco de dados.
 - Manutenção do isolamento entre transações via controle de concorrência.
 - Detecção e resolução de deadlock entre transações conflitantes.
 - Recuperação de falhas de transações. Exemplo, MySQL depende de mecanismo de armazenamento como o InnoBD para lidar com o gerenciamento de transações.
+
+## Gerenciador de Segurança 
+Controla o acesso ao banco de dados autenticando usuário e autorizando operações. 
+
+- Gerenciamento de contas de usuário - Criar, modificar, excluir usuários.
+- Controle de acesso - Concender ou revogar privilégio de acesso do usuário.
+- Gerenciamento de senhas - Definir regras de política de senha.
+- Auditoria - Registrar atividades do usuário para auditoria.
+- Criptografia - Criptografar dados em repouso ou em trânsito. Exemplo, o Oracle Database fornece segurança avançada por meio de produtos como Oracle Label Security.
+
+## Gerenciador de Acesso a Dados 
+Essa interface permite permite que usuários e aplicativos externos acessem e manipulem dados no banco de dados.
+
+- Linguagens de consulta como SQL, APIs NoSQL e etc.
+- Interface programáticas como JDBC, ODBC, ADO.NET.
+- Serviços da web, mensagens e outros protocolos de comunicação. Exemplo, o MongoDB fornece acesso a dados via shell do MongoDB, drivers para várias linguagens e APIs REST.
+
+## Gerenciador de Buffer
+Gerencia cache de Buffer do banco de dados que armazena temporariamente páginas de dados na memória para acesso mais rápido.
+
+- Armazenamento em cache de páginas de dados frequentemente usadas no disco.
+- Aplicação de políticas de substituição de buffer como LRU para gerenciar o cache.
+- Coordenação como o gerenciador de armazenamento para buscar páginas de dados.
+- Gravação de páginas modificadas do buffer no disco. Exemplo, o InnoDB usa um pool de buffers para armazenar em cache páginas de dados e índices.
