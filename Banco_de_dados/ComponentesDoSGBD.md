@@ -58,3 +58,22 @@ Gerencia cache de Buffer do banco de dados que armazena temporariamente páginas
 - Aplicação de políticas de substituição de buffer como LRU para gerenciar o cache.
 - Coordenação como o gerenciador de armazenamento para buscar páginas de dados.
 - Gravação de páginas modificadas do buffer no disco. Exemplo, o InnoDB usa um pool de buffers para armazenar em cache páginas de dados e índices.
+
+## Serviço de Logging 
+Registra todas as transações, operações e modificações no banco de dados em um arquivo de log.
+
+- Reversão de transações em caso de falha.
+- Recuperação do banco de dados para um estado consistente após uma falha.
+- Replicação de alterações de dados para servidores escravos.
+- Auditoria de acesso e alterações no banco de dados. Exemplo, o MongoDB usa oplog para replicação e o WiredTiger usa logging de antemão.
+
+## Ferramentas de Administração 
+O SGBD tem algumas utilidades administrativas para tarefas.
+
+- Gerenciamento de usuários, permissões e acesso.
+- Capacidade de backup e restauração.
+- Inicialização e configuração do banco de dados.
+- Monitoramento de atividades e desempenho atuais.
+- Gerenciamento de buffers de memória, armazenamento, consultas, etc. Exemplo, o MySQL vem com o MySQL Workbench para administração.
+
+Esses componentes atuam em conjunto para fornecer funcionalidades amplas de gerenciamento de banco de dados em uma variedade de ambientes e aplicações.
