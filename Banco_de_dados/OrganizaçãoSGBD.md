@@ -9,3 +9,6 @@ Os dados são armazenados sequencialmente em um arquivo ou tabela. Aui os dados 
 
 ### Organização de Arquivos Indexada
 Os dados são armazenados em um arquivo ou tabela com um índice. O indice é uma estrutura de dados que contém ponteiros para a localização dos dados dentro do arquivo ou tabela, facilitando e acelerando a busca por registros específicos.
+
+### Organização de Arquivos de Hash
+Os dados são armazenados em um arquivo ou tabela usando uma função de hash.
