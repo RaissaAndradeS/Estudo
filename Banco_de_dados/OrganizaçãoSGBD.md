@@ -5,3 +5,4 @@ Diz sobre a disposição dos dados em um arquivo ou tabela de banco de dados. Na
 ## Os quatros tipos de organização 
 
 ### Organização Sequencial de Arquivos
+Os dados são armazenados sequencialmente em um arquivo ou tabela. Aui os dados são acessados sequencialmente na prdem em que são armazenados, começando do inicio do arquivo e seguindo em direção ao final.
