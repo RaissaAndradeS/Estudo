@@ -14,4 +14,5 @@ Os dados são armazenados em um arquivo ou tabela com um índice. O indice é um
 Os dados são armazenados em um arquivo ou tabela usando uma função de hash. A função de hash converte um valor de chave em um código de hash, que é usado para mapear a chave para a localização no arquivo ou tabela onde os dados são armazenados.
 
 ### Organização de Arquivos Clusterizados
-Na organização de arquivos clusterizados, os dados são armazenados em um arquivo ou tabela com base nos valores de uma ou mais colunas,
+Na organização de arquivos clusterizados, os dados são armazenados em um arquivo ou tabela com base nos valores de uma ou mais colunas, chamadas de chave de clustering. A chave de clustering determina a ordem física na qual os dados são armazenados no disco.
+
