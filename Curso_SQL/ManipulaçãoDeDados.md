@@ -22,5 +22,13 @@ VALUES(1, 'Clara', 20, 'Engenharia de Software')
 O valor 1 é da coluna ID, Clara é da coluna Nome, 20 é da coluna Idade e Engenharia de Software é da coluna Curso.
 
 ## Seleção de dados
+Select é usado para recuperar dados de uma tabela, permitindo selecionar colunas específicas ou todas as colunas de uma tabela. <br>
+
+```
+SELECT coluna1, coluna2, ...
+FROM nome_da_tabela
+WHERE condição;
+``` 
+<br>
 ## Atualização de dados
 ## Exclusão de dados 
