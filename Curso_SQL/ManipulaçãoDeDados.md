@@ -37,8 +37,23 @@ WHERE condição;
 ``coluna1, coluna2``: lista as colunas que serão recuperadas, o ``*`` pode ser usado para selecionar todas as colunas <br>
 ``FROM``: indica a tabela da qual os dados serão selecionados <br> 
 ``nome_da_tabela``: especifica o nome da tabela <br>
+``WHERE``: permite filtrar os resultados com base em uma condição.
 
-
+```
+SELECT Nome, Idade, Curso
+FROM Alunos;
+```
 
 ## Atualização de dados
+Update é usado para modificar os dados existentes em uma tabela. <br>
+
+```
+UPDATE nome_da_tabela
+SET coluna1 = novo_valor1, coluna2 = novo_valor2, ...
+WHERE condição
+```
+
+``UPDATE``: inicio do comando de atualização 
+
+
 ## Exclusão de dados 
