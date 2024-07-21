@@ -4,7 +4,10 @@
 
 ## Inserção de dados
 Insert é usado para adicionar novos registros em uma tabela.<br>
-``INSERT INTO nome_da_tabela (coluna1, coluna2, ...)`` <br>
+```
+INSERT INTO nome_da_tabela (coluna1, coluna2, ...)
+VALUES (valor1, valor2...);
+```
 
 Pontos chave do comando Insert: <br>
 ``INSERT INTO``: inicio do comando de inserção <br>
@@ -29,6 +32,13 @@ SELECT coluna1, coluna2, ...
 FROM nome_da_tabela
 WHERE condição;
 ``` 
-<br>
+
+``SELECT``: inicio do comando de seleção <br>
+``coluna1, coluna2``: lista as colunas que serão recuperadas, o ``*`` pode ser usado para selecionar todas as colunas <br>
+``FROM``: indica a tabela da qual os dados serão selecionados <br> 
+``nome_da_tabela``: especifica o nome da tabela <br>
+
+
+
 ## Atualização de dados
 ## Exclusão de dados 
