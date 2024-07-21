@@ -53,7 +53,32 @@ SET coluna1 = novo_valor1, coluna2 = novo_valor2, ...
 WHERE condição
 ```
 
-``UPDATE``: inicio do comando de atualização 
+``UPDATE``: inicio do comando de atualização <br>
+``nome_da_tabela``: especifica o nome da tabela em que os dados serão atualizados <br>
+``SET``: indica o inicio das atualizações que serão feitas <br>
+``coluna1, coluna2``: lista as colunas que serão atualizadas <br>
+``novo_valor1, novo_valor2``: lista os novos valores que substituirão os valores existentes <br>
+``WHERE``: permite filtrar os registros que serão atualizados com base em uma condição <br>
 
+```
+UPDATE Alunos
+SET Idade = 21
+WHERE ID = 1;
+```
 
 ## Exclusão de dados 
+
+Delete é usado para remover registros de uma tabela. <br>
+
+```
+DELETE FROM nome_da_tabela
+WHERE condição;
+```
+``DELETE FROM``: inicio do comando de exclusão <br>
+``nome_da_tabela``: especifica o nome da tabela que os registro serão excluídos <br>
+``WHERE``: permite filtrar os registros que serão excluídos com base em uma condição <br>
+
+```
+DELETE FROM Alunos
+WHERE ID = 1;
+```
