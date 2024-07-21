@@ -17,3 +17,5 @@ CREATE TABLE Alunos (
 );
 ```
 ## Chaves Estrangeiras 
+
+Uma chave estrangeira é um campo em uma tabela que se refere à chave primária de outra tabela. Ela estabelece um relacionamento entre as tabelas, permitindo a integridade referencial entre elas. As chaves estrangeiras são usadas para garantir que os dados relacionados sejam consistentes e que não haja referências a registros inexistentes.
