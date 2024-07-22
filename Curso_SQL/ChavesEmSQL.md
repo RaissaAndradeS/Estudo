@@ -24,6 +24,17 @@ Uma chave estrangeira é um campo em uma tabela que se refere à chave primária
 
  ```
  CREATE TABLE Cursos (
-    
+    id INT PRIMARY KEY,
+    nome VARCHAR (100),
+    departamento VARCHAR(100)
+ );
+
+ CREATE TABLE Parentes (
+    id INT PRIMARY KEY,
+    aluno_id INT,
+    nome VARCHAR(100),
+    relação VARCHAR(100),
+    FOREING KEY (aluno_id) REFERENCES Alunos(id)
  )
  ```
+ 
