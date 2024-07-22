@@ -46,3 +46,9 @@ O uso de chaves primárias e estrangeiras traz vários benefícios para o design
 - Unicidade dos registros: a chave primária garante que cada registro em uma table seja único e identificável de forma exclusiva.
 
 - Integridade referencia: as chaves estrangeiras garantem que não haja referências a registros inexistentes em tabelas relacionadas. Isso mantém a consistência dos dados e evita registros órfãos.
+
+- Relacionamento entre tabelas: as chaves estrangeiras permitem estabelecer relacionamentos entre tabelas, fornecendo uma maneira de conectar informações relacionadas em diferentes entidades.
+
+- Consultas e manipulação de dados: as chaves primárias e estrangeiras facilitam a consulta e manipulação de dados em várias tabelas usando instruções SQL, como JOINs.
+
+- Integridade dos dados: o uso correto de chaves primárias e estrangeiras ajuda a manter a integridade do dados, evitando inserções, atualizações ou exclusões indesejadas ou inconsistentes. 
