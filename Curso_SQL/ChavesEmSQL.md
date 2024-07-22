@@ -40,3 +40,9 @@ Uma chave estrangeira é um campo em uma tabela que se refere à chave primária
  No exemplo acima, a tabela "Parentes" possui uma chave estrangeira "aluno_id" que faz referência à chave primária "id" da tabela "Alunos". Isso estabelece um relacionamento entre tabelas, onde cada parente está associado a um aluno existente. <br>
 
  ## Benefícios das chaves primárias e estrangeiras 
+
+O uso de chaves primárias e estrangeiras traz vários benefícios para o design do seu banco de dados e para a integridade dos dados armazenados:
+
+- Unicidade dos registros: a chave primária garante que cada registro em uma table seja único e identificável de forma exclusiva.
+
+- Integridade referencia: as chaves estrangeiras garantem que não haja referências a registros inexistentes em tabelas relacionadas. Isso mantém a consistência dos dados e evita registros órfãos.
