@@ -43,12 +43,45 @@ Uma chave estrangeira é um campo em uma tabela que se refere à chave primária
 
 O uso de chaves primárias e estrangeiras traz vários benefícios para o design do seu banco de dados e para a integridade dos dados armazenados:
 
-- Unicidade dos registros: a chave primária garante que cada registro em uma table seja único e identificável de forma exclusiva.
+- **Unicidade dos registros**: a chave primária garante que cada registro em uma table seja único e identificável de forma exclusiva.
 
-- Integridade referencia: as chaves estrangeiras garantem que não haja referências a registros inexistentes em tabelas relacionadas. Isso mantém a consistência dos dados e evita registros órfãos.
+- **Integridade referência**: as chaves estrangeiras garantem que não haja referências a registros inexistentes em tabelas relacionadas. Isso mantém a consistência dos dados e evita registros órfãos.
 
-- Relacionamento entre tabelas: as chaves estrangeiras permitem estabelecer relacionamentos entre tabelas, fornecendo uma maneira de conectar informações relacionadas em diferentes entidades.
+- **Relacionamento entre tabelas**: as chaves estrangeiras permitem estabelecer relacionamentos entre tabelas, fornecendo uma maneira de conectar informações relacionadas em diferentes entidades.
 
-- Consultas e manipulação de dados: as chaves primárias e estrangeiras facilitam a consulta e manipulação de dados em várias tabelas usando instruções SQL, como JOINs.
+- **Consultas e manipulação de dados**: as chaves primárias e estrangeiras facilitam a consulta e manipulação de dados em várias tabelas usando instruções SQL, como JOINs.
 
-- Integridade dos dados: o uso correto de chaves primárias e estrangeiras ajuda a manter a integridade do dados, evitando inserções, atualizações ou exclusões indesejadas ou inconsistentes. 
+- **Integridade dos dados**: o uso correto de chaves primárias e estrangeiras ajuda a manter a integridade do dados, evitando inserções, atualizações ou exclusões indesejadas ou inconsistentes. 
+
+Comandos para inserir dados nas tabelas "Alunos", "Cursos" e "Parentes":
+
+```
+-- Inserindo dados na tabela "Cursos"
+INSERT INTO Cursos (id, nome, departamento)
+VALUES
+   (1, 'Engenharia de Software', 'Ciência da Computação'),
+   (2, 'Administração de Empresas', 'Administração'),
+   (3, 'Arquitetura', 'Artes'),
+   (4, 'Medicina', 'Ciências da Saúde'),
+   (5, 'Direito', 'Ciência Sociais');
+
+--- Inserindo dados na tabela "Alunos"
+INSERT INTO Alunos (id, nome, idade, curso_id)
+VALUES
+   (1, 'João Silva', 20, 1),
+   (2, 'Maria Santos', 22, 2),
+   (3, 'Pedro Oliveira', 19, 3),
+   (4, 'Ana Pereira', 21, 1),
+   (5, 'Carlos Ferreira', 18, 4);
+
+-- Inserindo dados na tabela "Parentes"
+INSERT INTO Parentes (id, aluno_id, nome, relação)
+VALUES
+   (1, 1, 'Mãe do João', 'Mãe'),
+   (2, 2, 'Pai da Maria', 'Pai'),
+   (3, 3, 'Irmã de Pedro', 'Irmã'),
+   (4, 4, 'Pai de Ana', 'Pai'),
+   (5, 5, 'Mãe de Carlos', 'Mãe');
+
+```
+As chaves primárias e estrangeiras desempenham um papel fundamental no design de bancos de dados relacionais. Elas garantem a integridade dos dados, estabelecem relacionamentos entre tabelas e fornecem uma estrutura sólida para consultar e manipular informações.
