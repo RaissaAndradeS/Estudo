@@ -37,4 +37,6 @@ Uma chave estrangeira é um campo em uma tabela que se refere à chave primária
     FOREING KEY (aluno_id) REFERENCES Alunos(id)
  )
  ```
- 
+ No exemplo acima, a tabela "Parentes" possui uma chave estrangeira "aluno_id" que faz referência à chave primária "id" da tabela "Alunos". Isso estabelece um relacionamento entre tabelas, onde cada parente está associado a um aluno existente. <br>
+
+ ## Benefícios das chaves primárias e estrangeiras 
