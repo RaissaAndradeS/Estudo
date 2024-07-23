@@ -85,3 +85,11 @@ VALUES
 
 ```
 As chaves primárias e estrangeiras desempenham um papel fundamental no design de bancos de dados relacionais. Elas garantem a integridade dos dados, estabelecem relacionamentos entre tabelas e fornecem uma estrutura sólida para consultar e manipular informações.
+
+É possível adicionar uma chave estrangeira a uma tabela existente utilizando o comando ``ALTER TABLE``
+
+```
+ALTER TABLE nome_da_tabela1
+ADD CONSTRAINT nome_da_chave_estrangeira FOREIGN KEY (coluna2)
+REFERENCES nome_da_tabela2 (coluna3);
+```
