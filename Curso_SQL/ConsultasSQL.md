@@ -62,3 +62,8 @@ Podemos combinar várias condições usando operadores lógicos, como ``AND`` e 
 
 ```SELECT * FROM tabela WHERE condicao1 AND condicao2;```<br>
 Isso retornará os registros que atendem a ambas condições especificadas.
+
+Exemplo com a tabela Aluno, caso tenha "nome" e "curso". Para selecionar todos os alunos que se chamam "João" e estão no curso de "Engenharia", podemos fazer: 
+
+```SELECT * FROM Alunos WHERE nome = 'João' AND curso = 'Engenharia'; ```
+
