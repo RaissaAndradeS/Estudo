@@ -67,3 +67,29 @@ Exemplo com a tabela Aluno, caso tenha "nome" e "curso". Para selecionar todos o
 
 ```SELECT * FROM Alunos WHERE nome = 'João' AND curso = 'Engenharia'; ```
 
+## Outros exemplos 
+
+> Selecionar todos os alunos da tabela Alunos <br>
+``SELECT * FROM Alunos;``
+
+> Selecionar apenas o nome e a idade dos alunos da tabela Alunos <br>
+``SELECT nome, idade FROM Alunos;``
+
+> Selecionar os alunos que têm idade maior que 20 anos da tabela alunos <br>
+``SELECT * FROM Alunos WHERE idade > 20;``
+
+> Selecionar os cursos distintos da tabela Cursos <br>
+``SELECT DISTINCT curso FROM Cursos;``
+
+> Selecionar os alunos que pertencem à familia "Silva" da tabela Parentes: <br>
+``SELECT * FROM Alunos WHERE id IN (SELECT aluno_id FROM Parentes WHERE sobrenome = 'Silva')``
+
+> Selecionar os alunos que estão matriculados no curso de Engenharia da tabela Alunos e Cursos <br>
+
+```
+SELECT Alunos.* FROM 
+JOIN Cursos ON Alunos.curso_id = Cursos.id
+WHERE Cursos.nome = 'Engenharia';
+````
+
+Lembrar de adaptar a sintaxe e os nomes das colunas de acordo com seu banco de dados específico.
