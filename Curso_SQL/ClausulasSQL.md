@@ -36,3 +36,53 @@ Para selecionar os cursos com mais de 10 alunos na tabela Alunos: <br>
 Para selecionar os alunos com seus respectivos cursos da tabela Alunos e Cursos. <br>
 ``SELECT Alunos.nome, Cursos.nome FROM Alunos JOIN Cursos ON Alunos.cursos_id = Cursos.id; ``
 
+### UNION em SQL
+É usada para combinar o resultado de duas ou mais consultas em um único conjunto de resultados. As consultas devem ter a mesma estrutura de colunas. <br>
+
+```
+SELECT colunas FROM tabela1
+UNION
+SELECT colunas FROM tabela2
+```
+
+Para selecionar todos os alunos das tabelas Alunos e Parentes: <br>
+
+```
+SELECT nome FROM Alunos
+UNION
+SELECT nome FROM Parentes;
+```
+
+Essas são algumas cláusulas mais comuns para manipulação e organização de resultado de consulta. 
+
+## Outros exemplos 
+
+> ORDER BY: <br>
+    > Ordem decrescente <br>
+``SELECT * FROM Alunos ORDER BY nome DESC;``
+
+> GROUP BY: <br>
+    > Contar o número de alunos por curso e mostrar apenas os cursos com mais de 5 alunos <br>
+``SELECT curso_id, COUNT (*) FROM Alunos GROUP BY curso_id HAVING COUNT (*) > 5; ``
+
+> HAVNG: <br>
+    > Selecionar os cursos cuja a média de idade dos alunos seja maior que 25 <br>
+``SELECT curso_id, AVG(idade) as media_idade FROM Alunos GROUP BY curso_id HAVING AVG(idade) > 25;``
+
+> JOIN: <br>
+    > Selecionar o alunos com seus respectivos cursos e seus nomes de parentes da tabela Parentes <br>
+```
+SELECT Alunos.nome, Cursos,nome, Parentes.nome as nome_parente
+FROM Alunos
+JOIN Cursos ON Alunos.curso_id = Cursos.id
+JOIN Parentes ON Alunos.id = Parentes.aluno_id;
+```
+
+> UNION: <br>
+    > Selecionar todos os nomes de alunos das tabelas Alunos e Parentes <br>
+```
+SELECT nome FROM Alunos
+UNION
+SELECT nome FROM Parentes;
+```
+Esses são alguns exemplos de como usar as cláusulas SQL para realizar consultas mais avançadas nas tabelas.
